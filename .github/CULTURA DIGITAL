@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Progresiones Cultura Digital II - Recursos y herramientas para el aprendizaje digital en la era moderna">
+  <title>Progresiones Cultura Digital II</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #222; color: white; padding: 1em; text-align: center; }
+    nav { background: #333; color: white; display: flex; justify-content: space-around; padding: 1em; }
+    nav a { color: white; text-decoration: none; }
+    main { padding: 2em; }
+    section { margin-bottom: 2em; }
+    .hero { background: url('https://picsum.photos/1200/400?random=101') no-repeat center center/cover; color: white; text-align: center; padding: 5em 2em; }
+    .cta { background: #f90; padding: 2em; text-align: center; color: white; font-weight: bold; }
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em; 
+    }
+    .grid > div {
+      background-color: #f9f9f9;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-height: 500px; 
+      overflow-y: auto; 
+    }
+    .grid img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 1em;
+      border-radius: 4px;
+    }
+    .grid h3 {
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    .grid p, .grid ul {
+      color: #555; 
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+    .grid ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .grid ul ul {
+      list-style-type: circle;
+    }
+    /* Estas reglas ya no serán estrictamente necesarias si eliminamos la sección de contacto, 
+       pero las mantengo por si las quieres usar en otras secciones con formularios */
+    form { display: flex; flex-direction: column; gap: 0.5em; max-width: 400px; margin: auto; }
+    input, textarea { padding: 0.5em; border: 1px solid #ddd; border-radius: 4px; }
+    button {
+      background-color: #333;
+      color: white;
+      padding: 0.7em 1.5em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 1em;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    .social { text-align: center; margin-top: 2em; }
+    .social a {
+      color: #333; 
+      margin: 0 0.5em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    /* Las reglas CSS específicas para #contacto ya no son necesarias si eliminamos la sección */
+    /* #contacto p, 
+    #contacto label {
+      color: #333; 
+      font-size: 1em; 
+    }
+    #contacto h2 {
+      color: #333; 
+    } */
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://picsum.photos/60/60?random=102" alt="Logo" style="height: 60px;">
+    <h1>Progresiones Cultura Digital II</h1>
+    <p>Resumen de Progresiones</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#temas">Temas</a>
+    </nav>
+
+  <div class="hero">
+    <h2>Transforma tu aprendizaje con la cultura digital</h2>
+    <p>Descubre herramientas, métodos y plataformas esenciales para navegar el mundo digital educativo.</p>
+  </div>
+
+  <main>
+    <section id="temas">
+      <h2>Temas Principales</h2>
+      <div class="grid">
+        <div>
+          <h3>1. Herramientas Digitales</h3>
+          <p>
+            <b>1.1 Conceptos de Herramientas Digitales</b><br>
+            Las <b>herramientas digitales</b> son aplicaciones, plataformas, software o dispositivos electrónicos que permiten a los usuarios realizar tareas específicas de manera más eficiente, creativa y colaborativa. Estas herramientas abarcan desde programas de procesamiento de texto y hojas de cálculo hasta aplicaciones de gestión de proyectos, plataformas de comunicación en línea, herramientas de diseño gráfico y sistemas de almacenamiento en la nube.<br><br>
+            En el contexto educativo y profesional, las herramientas digitales facilitan el acceso a la información, la comunicación entre individuos y grupos, la organización y ejecución de proyectos, así como la creación y difusión de contenido. Son esenciales para el trabajo en entornos digitales, permitiendo a los usuarios adaptarse a las demandas tecnológicas modernas y optimizar su desempeño en diversas áreas.<br><br>
+            Paul Gilster (1997) las define como: "instrumentos y recursos basados en la tecnología que permiten a los individuos acceder, gestionar, integrar, analizar y evaluar información en múltiples formatos y desde diversas fuentes digitales. Estas herramientas son fundamentales para la comunicación, la creación de contenido, la resolución de problemas y la toma de decisiones en la era digital".<br><br>
+            Además, en un mundo donde la transformación digital es constante, las herramientas digitales están en continua evolución, integrando funcionalidades más avanzadas como la inteligencia artificial y la automatización.
+          </p>
+          <p>
+            <b>1.2 Ejemplos de Herramientas Digitales Útiles para Estudiantes</b><br>
+            <ul>
+              <li><b>Google Classroom:</b> plataforma para gestionar tareas, distribuir materiales y mantener la comunicación entre estudiantes y profesores.</li>
+              <li><b>Kahoot!:</b> herramienta para crear cuestionarios interactivos y juegos educativos que hacen el aprendizaje divertido.</li>
+              <li><b>Canva:</b> aplicación de diseño gráfico que permite a los estudiantes crear presentaciones, infografías, pósteres y otros contenidos visuales.</li>
+              <li><b>Duolingo:</b> plataforma de aprendizaje de idiomas que utiliza lecciones gamificadas para enseñar nuevas lenguas.</li>
+              <li><b>Quizlet:</b> herramienta para crear y compartir tarjetas de estudio y cuestionarios, útil para la memorización de conceptos.</li>
+              <li><b>Microsoft OneNote/Evernote:</b> aplicaciones para tomar notas, organizar ideas y colaborar en proyectos grupales.</li>
+              <li><b>Trello:</b> plataforma de gestión de proyectos que permite a los estudiantes organizar tareas, hacer seguimiento del progreso y colaborar con otros.</li>
+              <li><b>Padlet:</b> herramienta colaborativa en línea que permite a los estudiantes y maestros compartir ideas, documentos y contenido multimedia en un muro visual.</li>
+              <li><b>Scratch:</b> herramienta de programación visual que permite a los estudiantes aprender los fundamentos de la programación y crear proyectos interactivos.</li>
+              <li><b>Flipgrid:</b> plataforma que permite a los estudiantes grabar y compartir videos cortos como respuestas a temas planteados por los maestros, fomentando la discusión en el aula.</li>
+              <li><b>Google Workspace (Google Docs, Sheets, Slides, Drive):</b> una suite de herramientas de productividad en la nube que incluye procesamiento de texto, hojas de cálculo, presentaciones y almacenamiento en línea. Los alumnos pueden acceder a Google Workspace con su correo electrónico de Google (Gmail) o mediante una cuenta institucional proporcionada por la escuela. Permite la creación y edición de documentos colaborativos, almacenamiento de archivos y realización de presentaciones en línea.</li>
+            </ul>
+          </p>
+          <p>
+            <b>1.3 Ventajas de Utilizar las Herramientas en Línea</b><br>
+            <ul>
+              <li><b>Mejora del acceso a la información:</b> Acceso global y actualización continua. Las herramientas digitales permiten acceder a una vasta cantidad de información y recursos en línea, desde artículos académicos hasta tutoriales y videos. Además, facilitan el acceso a la información más reciente y actualizada en tiempo real.</li>
+              <li><b>Fomento de la colaboración y comunicación:</b> Trabajo en equipo y comunicación efectiva. Las herramientas como Google Docs, Microsoft Teams y Slack permiten a los usuarios colaborar en tiempo real. Además, facilitan la comunicación entre los miembros de un equipo o entre estudiantes y profesores.</li>
+              <li><b>Desarrollo de habilidades digitales:</b> Competencias tecnológicas y preparación profesional. Usar herramientas digitales ayuda a los estudiantes a desarrollar habilidades tecnológicas esenciales para el mercado laboral y los familiariza con herramientas digitales para enfrentar un entorno profesional moderno.</li>
+              <li><b>Facilitación del aprendizaje activo y personalizado:</b> Aprendizaje interactivo y la personalización del aprendizaje, ya que permite ajustar el contenido y actividades según las necesidades y preferencias individuales, permitiendo crear aprendizaje interactivo por medio de la multimedia.</li>
+              <li><b>Optimización y gestión del tiempo y los recursos:</b> Ayudan a organizar y planificar tareas y establecer prioridades, además de automatizar tareas.</li>
+              <li><b>Estimulación de la creatividad e innovación:</b> Tienen herramientas creativas como Canva y Figma que facilitan la creación de contenido visual atractivo y profesional, lo que fomenta la exploración de nuevas ideas.</li>
+              <li><b>Acceso a oportunidades de aprendizaje globales:</b> Redes globales conectadas con expertos y compañeros con recursos educativos a nivel global.</li>
+              <li><b>Evaluación y retroalimentación continua:</b> Las herramientas digitales permiten realizar evaluaciones rápidas, evaluaciones en tiempo real y hacer un monitoreo del progreso. En esta se puede obtener retroalimentación instantánea y apoya a la gestión de la educación.</li>
+            </ul>
+          </p>
+          <img src="https://picsum.photos/400/300?random=103" alt="Herramientas digitales">
+        </div>
+        <div>
+          <h3>2. Comunicación y Colaboración Digital</h3>
+          <p>
+            <b>2.1 Colaboración en Línea</b><br>
+            <b>Colaborar en línea</b> significa trabajar en equipo mediante el uso de herramientas digitales como videollamadas, mensajería instantánea y documentos compartidos. Esto permite a los miembros del equipo compartir ideas y recursos de manera rápida, organizar el trabajo y asignar responsabilidades específicas, y resolver problemas en tiempo real, aunque estén en lugares distintos.<br><br>
+            Las herramientas básicas de comunicación digital son para colaborar efectivamente en línea. Existen diferentes plataformas que facilitan la comunicación, las más comunes son <b>WhatsApp Web</b>, que permite enviar mensajes y compartir archivos a partir de una computadora o dispositivo móvil, y <b>Google Meet</b>, que es una plataforma para realizar videollamadas y conferencias en tiempo real, más útil en reuniones grupales y clases en línea. Estas herramientas ayudan a facilitar la comunicación en tiempo real mediante mensajes y videollamadas, además de mantener la información centralizada en un solo lugar y ahorrar tiempo y recursos, ya que los participantes no necesitan estar físicamente presentes para colaborar.<br><br>
+            Las normas de comunicación en línea básicamente son: respetar los turnos al hablar, mantener el lenguaje respetuoso y claro, responder de una manera oportuna, ser puntual y cumplir con los acuerdos.<br><br>
+            Las ventajas de la colaboración digital son que trabajar en equipo usando la tecnología es mucho más flexible en los horarios, ya que se puede colaborar desde cualquier lugar en cualquier momento; hay un mayor acceso a recursos debido a la información y los documentos que pueden compartirse fácilmente; y el desarrollo de habilidades digitales es normal utilizarlos.
+          </p>
+          <p>
+            <b>2.2 Organización y Gestión de Proyectos en Línea</b><br>
+            Cuando se trabaja en equipo en entornos digitales no es solo importante la comunicación, sino también la organización de tareas y gestión de los avances del proyecto. Existen herramientas que ayudan a dividir el trabajo, asignar responsabilidades y monitorear el progreso, lo cual facilita el cumplimiento de los objetivos y fechas establecidas, como lo es <b>Trello</b>, que es una plataforma de tableros visuales que permite organizar tareas mediante tarjetas; <b>Google Calendar</b>, que permite organizar tiempos asignando fechas y horarios a cada tarea; y <b>Google Drive</b>, que es una plataforma que permite almacenar y compartir documentos, lo cual es esencial para tener toda la información del proyecto en un solo lugar. Estas herramientas permiten asignar y dividir tareas, llevar un seguimiento del avance y tener acceso a la información centralizada.<br><br>
+            Igual se tiene que tener en mente que las normas de organización de los proyectos en línea son: definir roles y responsabilidades, mantener actualizado el calendario y los tableros de tareas, ser responsable y cumplir con las fechas límite, y comunicar cualquier problema o retraso.<br><br>
+            Las ventajas de la organización de proyectos en línea son la claridad de los objetivos, la reducción de conflictos y la optimización del tiempo.
+          </p>
+          <img src="https://picsum.photos/400/300?random=104" alt="Comunicación digital">
+        </div>
+        <div>
+          <h3>3. Teoría del Diseño Visual Efectivo</h3>
+          <p>
+            <b>3.1 Teoría del Color</b><br>
+            La <b>teoría del color</b> es una guía fundamental en el diseño gráfico que ayuda a comprender cómo los colores interactúan entre sí y cómo se perciben en distintas combinaciones. Al utilizar los colores de manera efectiva, se puede mejorar la comunicación visual, transmitir emociones y dirigir la atención del espectador hacia elementos específicos. El conocimiento de esta teoría permite a los diseñadores elegir combinaciones armónicas, como los esquemas análogos, complementarios o triádicos, y entender cómo factores como la saturación, el brillo y el tono influyen en la percepción del color.<br><br>
+            Para esto es importante entender el <b>círculo cromático</b>, que es una herramienta que organiza los colores primarios, secundarios y terciarios en un círculo, facilitando la creación de combinaciones armónicas. El círculo cromático es una herramienta fundamental en la cultura digital y el diseño, ya que nos permite comprender cómo interactúan los colores entre sí. Imagina un círculo que contiene todos los colores visibles dispuestos de manera circular. Los <b>colores primarios</b> son como los bloques de construcción de todos los demás colores. En la cultura digital, estos suelen ser el rojo, el verde y el azul (<b>RGB</b>). Los <b>secundarios</b> son cuando mezclas dos colores primarios, obtienes colores como el amarillo, el magenta o el cian; estos son secundarios en el círculo cromático. Y los <b>colores terciarios</b> son el resultado de mezclar un color primario con un secundario adyacente en el círculo cromático.<br><br>
+            Su aplicación en la cultura digital permite la creación de imágenes, videos, sitios web y cualquier proyecto que implique el uso de colores, y con esto se seleccionan paletas de colores armoniosas que funcionen bien juntas y transmitan emociones o mensajes específicos. Varias de las combinaciones que existen son, por ejemplo, las <b>monocromáticas</b>, que es la combinación de un solo color en distintos tonos, saturaciones y brillos de este mismo color, lo que produce un diseño coherente, limpio y profesional, ideal cuando se busca elegancia y simplicidad.<br><br>
+            Otra sería la <b>análoga</b>, que es la combinación de colores que se encuentran juntos en el círculo cromático, como el rojo, el naranja y el amarillo, que crea una sensación de armonía y fluidez, ya que los colores análogos suelen tener una relación visual natural entre sí. Es útil para generar diseños cálidos y acogedores sin muchos contrastes.<br><br>
+            Y la combinación <b>complementaria</b>, que es el utilizar colores opuestos en el círculo cromático, como el azul y el naranja o el rojo y el verde, ya que genera un contraste fuerte y dinámico que atrae la atención y hace que ciertos elementos resalten. Es ideal para destacar partes específicas del diseño y crear un impacto visual.<br><br>
+            Y sobre la <b>temperatura del color</b>, esta se refiere a cómo percibimos los colores en términos de calidez o frialdad, lo que influye en nuestras emociones y en la forma en la que las personas interactúan con el contenido. Por ejemplo, los <b>colores cálidos</b> incluyen tonos como el rojo, naranja y amarillo, que están asociados con el fuego, el sol y la energía, lo que tiende a transmitir sentimientos de entusiasmo, energía y acogimiento. También pueden expresar cercanía y calidez emocional, lo que los hace ideales para diseños que buscan atraer la atención de manera positiva y generar sensación de comunidad. Se utilizan frecuentemente para llamar la atención a ciertos elementos, como botones de acción o llamadas a la acción, y son comunes en el marketing o ventas.<br><br>
+            Y los <b>colores fríos</b> abarcan del azul, verde y púrpura, y se relacionan con la naturaleza, el agua, el hielo y el cielo nocturno. Estos transmiten calma, serenidad y profesionalismo. Tienden a evocar una sensación de tranquilidad y confianza y son comunes en sectores como la tecnología, la salud y las finanzas, donde es esencial transmitir estabilidad y confianza.<br><br>
+            Y los <b>colores neutros</b>, que son un equilibrio entre la calidez y la frialdad, que no son cálidos ni fríos, sirven para equilibrar y complementar la temperatura del color en un diseño. Estos aportan simplicidad y sofisticación. Su función principal es equilibrar las paletas de colores sin sobrecargar el diseño. Suelen funcionar como fondo o espacio negativo en un diseño, permitiendo que ciertos colores destaquen sin ser muy dominantes.<br><br>
+            Además, hay que tomar en cuenta el contexto cultural, porque esto va a influir en el uso estratégico que se le pueda dar. Ya que estos factores afectan la:
+          </p>
+          <p>
+            <b>3.2 Psicología del Color</b><br>
+            Que estudia cómo los colores influyen en las emociones y la forma en la que las personas perciben el mundo, ya que cada color provoca una respuesta emocional específica, y en el diseño se puede utilizar esta reacción para reforzar mensajes para que generen un impacto más profundo en la audiencia. Por ejemplo, el <b>rojo</b> se tiende a atribuir a la energía, la urgencia y la pasión; el <b>azul</b> a la calma, la confianza y el profesionalismo; el <b>verde</b> al crecimiento, la salud y la estabilidad; el <b>amarillo</b> a la felicidad, el entusiasmo, el optimismo y la atención; y el <b>naranja</b> a la creatividad, el entusiasmo y la cercanía. Esta psicología del color se aplica en las redes sociales con colores vibrantes que captan la atención y destacan publicaciones; o los blogs con colores neutros y tonos pastel que pueden favorecer la lectura y transmitir tranquilidad; y finalmente en presentaciones en las que se elige una paleta que apoya el contenido, como en una presentación de salud que podría beneficiarse de los verdes o azules.
+          </p>
+          <img src="https://picsum.photos/400/300?random=105" alt="Diseño visual">
+        </div>
+        <div>
+          <h3>4. Investigación Digital</h3>
+          <p>
+            <b>4.1 Investigación Digital y Sus Métodos</b><br>
+            La <b>investigación digital</b> es una metodología adaptada al entorno en línea que permite estudiar y analizar fenómenos, comportamientos y dinámicas sociales en plataformas digitales. A diferencia de los métodos tradicionales, la investi
